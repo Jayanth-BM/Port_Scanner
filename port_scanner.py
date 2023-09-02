@@ -81,13 +81,11 @@ class PortScanner:
 
         elif type(self.targets) == str and type(self.ports) == int:
             # DO this if there is one target with one Port
-            total_ports_closed = 0
             print("\n")
             print(termcolor.colored(f"[*] Scanning Port for Target: {self.targets}", "green"))
             answer = self.scan_ports(self.targets, self.ports)
             if answer == False:
-                total_ports_closed += 1
-            print(termcolor.colored(f"[-] Port {self.ports} is not Opened for {self.targets}", "red"))
+                print(termcolor.colored(f"[-] Port {self.ports} is not Opened for {self.targets}", "red"))
 
 
         
