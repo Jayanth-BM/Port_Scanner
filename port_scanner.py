@@ -20,6 +20,7 @@ class PortScanner:
             sock = socket.socket()
             sock.connect((target_ip, port_number))
             print(f"[+] The Port {port_number} is Opened")
+            sock.close()
         except:
             return False
 
