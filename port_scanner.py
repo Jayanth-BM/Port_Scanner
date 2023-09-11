@@ -1,11 +1,6 @@
-import os
+import socket
+import termcolor
 
-try:
-    import socket
-    import termcolor
-except:
-    os.system("pip install socket")
-    os.system("pip install termcolor")
 
 
 class PortScanner:
