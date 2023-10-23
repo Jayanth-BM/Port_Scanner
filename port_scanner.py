@@ -39,7 +39,7 @@ class PortScanner:
             # For single port specified 
             self.ports = [int(self.ports)]
 
-        # print(type(self.targets), type(self.ports))
+        
 
 
 
