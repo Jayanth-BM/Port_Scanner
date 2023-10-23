@@ -42,7 +42,6 @@ class PortScanner:
         
 
 
-
     def start_scan(self):
         self.convert_data()
         for each_target in self.targets:
